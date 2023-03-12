@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is food </title>
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        body {
+            /* background-image: url(./navbar/BG.jpg); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="navbar/logo.png"></a>
+        <nav class="navbar">
+            <a href="#blog">المدونه</a>
+            <a href="#reservation">الحجوزات</a>
+            <a href="#team">الفريق</a>
+            <a href="./text.html#manu" class="active">المنيو</a>
+            <a href="#about">من نحن</a>
+            <a href="./text.html">الصفحه الرئيسيه</a>
+
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu"></i>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <section class="welcome" id="munu">
+        <h1 class="heading">WELCOM TO ROYATE</h1>
+        <center>
+            <h3 class="sub-heading"> ~ Luxury & Quality ~ </h3>
+        </center>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="navbar/6manu-1.jpg">
+                </div>
+
+                <div class="content ">
+                    <h3>سوبر بابا</h3>
+                    <h4>بيبروني، سجق ايطالي، لحم بتلو مدخن، بصل، فلفل اخضر، مشرم طازق، زيتون اسود
+                        <hr>139L.G
+                    </h4>
+
+                    <a href="#" class="btn">اطلب الان </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="navbar/feature.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>هوت اند سبايسي </h3>
+                    <h4>سجق ايطالي طماطم بصل فلفل اخضر هالبينو
+                        <hr>138L.G
+                    </h4>
+                    <a href="#" class="btn">اطلب الان </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="navbar/feature.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>تشيكن باربيكيو</h3>
+                    <h4>دجاج مشوي، بصل، مشروم طازج، صوص الباربكيو
+                        <hr>187L.G
+                    </h4>
+                    <a href="#" class="btn">اطلب الان</a>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="navbar/4manu-1.jpg">
+                </div>
+
+                <div class="content ">
+                    <h3>تشيكن سوبر بابا</h3>
+                    <h4>دجاج مشوي، سجق الدجاج، بيبروني الدجاج، بصل، فلفل اخضر، مشروم طازج، زيتون اسود
+                        <hr>146L.G
+                    </h4>
+                    <a href="#" class="btn">اطلب الان </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="navbar/5manu-1.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>تشيكن رانش</h3>
+                    <h4>دجاج مشوي طماطم مشروم طازج صوص الرانش
+                        <hr>177L.G
+                    </h4>
+                    <a href="#" class="btn">اطلب الان </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="navbar/6manu-1.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>البيتزا المدخنه</h3>
+                    <h4>لحمه بتلو مدخن، جبن مدخن، بصل، جبنه جوده، جبنه شيدر، صوص الكريمه
+                        <hr>109L.G
+                    </h4>
+                    <a href="#" class="btn">اطلب الان</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".home-slider", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 7500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+        });
+    </script>
+
+    <script type="text/javascript">
+        let menu = document.queryselector('#menu');
+        let navbar = document.queryselector('.navbar');
+
+        menu.onclick = () => {
+            menu.classlist.toggle('fa-times');
+            navbar.classlist.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

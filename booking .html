@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is food </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="navbar/logo.png"></a>
+        <nav class="navbar">
+            <a href="#blog">المدونه</a>
+            <a href="#reservation">الحجوزات</a>
+            <a href="#team">الفريق</a>
+            <a href="#manu">المنيو</a>
+            <a href="#about">من نحن</a>
+            <a href="#home" class="active">الصفحه الرئيسيه</a>
+
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="booking"></i>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <script type="text/javascript">
+        let menu = document.queryselector('#booking');
+        let navbar = document.queryselector('.navbar');
+
+        menu.onclick = () => {
+            menu.classlist.toggle('fa-times');
+            navbar.classlist.toggle('active');
+        }
+    </script>
+    <div class="reservation" id="reservation">
+        <div class="image">
+
+        </div>
+        <div class="from">
+            <h1 class="heading">حجز التربيزة </h1>
+            <center>
+                <h3 class="sub-heading">~ تحقق من مكانك ~ </h3>
+            </center>
+            <form>
+                <div class="form-holder">
+                    <div>
+                        <select>
+                            <option>1 فرد</option>
+                            <option>فرد 2</option>
+                            <option>فرد 3</option>
+                            <option>فرد 5</option>
+                            <option>فرد 6</option>
+                            <option>فرد 7</option>
+                            <option>فرد 8</option>
+                        </select>
+                        <input type="text" name="" placeholder="الوقت">
+                        <input type="text" name="" placeholder="رقم التليفون">
+                    </div>
+                    <div>
+                        <input type="text" name="" placeholder="التاريخ">
+                        <input type="text" name="" placeholder="الاسم">
+                        <input type="email" name="" placeholder="email">
+                    </div>
+                </div>
+                <center><a href="#" class="btn">احجز الآن </a></center>
+            </form>
+        </div>
+
+    </div>
